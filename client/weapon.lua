@@ -25,7 +25,7 @@ return function(gainStress, Config)
       while cache.weapon and thisThread == currentWeaponThread do
         if not isWeaponWhitelisted(cache.weapon) and IsPedShooting(cache.ped) and math.random() <= Config.Stress.chance then
           DebugPrint('Player shooting with non-whitelisted weapon: %s', cache.weapon)
-          gainStress(math.random(1, 5))
+          gainStress(1)
         end
         Wait(0)
       end

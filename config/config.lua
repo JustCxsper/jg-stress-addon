@@ -4,7 +4,7 @@ Debug = false, -- Loads of prints in F8
 UseMPH = false, -- Use MPH instead of KPH
 
 Stress = {
-  chance = 0.1, -- Percentage stress chance when shooting (0-1)
+  chance = 0.025, -- Percentage stress chance when shooting (0-1)
   minForShaking = 50, -- Minimum stress level for screen shaking
   speedThresholdBuckled = 1000, -- Speed threshold (in KPH/MPH per Config.UseMPH) above which buckled driving causes stress
         speedThresholdUnbuckled = 50, -- Speed threshold (in KPH/MPH per Config.UseMPH) above which unbuckled driving causes stress

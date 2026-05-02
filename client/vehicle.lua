@@ -14,11 +14,11 @@ return function(gainStress, isJobWhitelisted, speedMultiplier, Config)
             local stressSpeed = (vehClass == 8 or hasSeatbelt) and Config.Stress.speedThresholdBuckled or Config.Stress.speedThresholdUnbuckled
             if speed >= stressSpeed then
               DebugPrint('Speed exceeded threshold (%.2f), applying stress', stressSpeed)
-              gainStress(math.random(1, 3))
+              gainStress(1)
             end
           end
         end
-        Wait(1000)
+        Wait(5000)
       end
       DebugPrint('Exited vehicle stress loop')
     end)
